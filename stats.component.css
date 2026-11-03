@@ -1,0 +1,40 @@
+.stats h2 {
+  margin-bottom: 24px;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat span {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.stat.green {
+  border-left: 6px solid #4CAF50;
+}
+
+.stat.blue {
+  border-left: 6px solid #2196F3;
+}
+
+.charts {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.chart {
+  width: 400px;
+}

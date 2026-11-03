@@ -1,0 +1,23 @@
+<section class="dashboard">
+    <h2>📊 Tableau de bord</h2>
+
+    <div class="cards">
+        <div class="card" (click)="navigate('/students')">
+            <div class="icon">🎓</div>
+            <h3>Étudiants</h3>
+            <p>Gestion des étudiants</p>
+        </div>
+
+        <div class="card" (click)="navigate('/filieres')">
+            <div class="icon">📚</div>
+            <h3>Filières</h3>
+            <p>Gestion des filières</p>
+        </div>
+
+        <div class="card" (click)="navigate('/stats')">
+            <div class="icon">📈</div>
+            <h3>Statistiques</h3>
+            <p>Vue globale du système</p>
+        </div>
+    </div>
+</section>

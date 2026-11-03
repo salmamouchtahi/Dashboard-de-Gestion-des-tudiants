@@ -1,0 +1,43 @@
+<section class="section">
+  <h2>📚 Filières</h2>
+
+  <div class="form-row">
+    <input [(ngModel)]="name" placeholder="Nom de la filière">
+    <button (click)="addFiliere()">➕ Ajouter</button>
+  </div>
+
+  <p class="message">{{ message }}</p>
+
+  <ul class="list">
+    <li *ngFor="let filiere of filieres">
+
+      <div class="left">
+        <span *ngIf="!filiere.editing">
+          {{ filiere.name }}
+        </span>
+
+        <input *ngIf="filiere.editing"
+               [(ngModel)]="filiere._editName"
+               placeholder="Nom">
+      </div>
+
+      <div class="buttons">
+        <button class="edit" *ngIf="!filiere.editing"
+                (click)="startEdit(filiere)">
+          ✏️
+        </button>
+
+        <button class="save" *ngIf="filiere.editing"
+                (click)="updateFiliere(filiere)">
+          💾
+        </button>
+
+        <button class="danger"
+                (click)="deleteFiliere(filiere.id)">
+          🗑️
+        </button>
+      </div>
+
+    </li>
+  </ul>
+</section>

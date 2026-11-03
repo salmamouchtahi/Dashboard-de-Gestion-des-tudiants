@@ -1,0 +1,11 @@
+<div class="layout">
+    <app-sidebar *ngIf="auth.isLoggedIn()"></app-sidebar>
+
+    <div class="content">
+        <main>
+            <div class="page-wrapper">
+                <router-outlet></router-outlet>
+            </div>
+        </main>
+    </div>
+</div>

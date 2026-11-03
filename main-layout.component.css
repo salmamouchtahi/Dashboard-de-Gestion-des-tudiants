@@ -1,0 +1,39 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1f2a38;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.content {
+    flex: 1;
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 220px);
+}
+
+
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f4f6f8;
+}
+
+.page-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    gap: 24px;
+}
